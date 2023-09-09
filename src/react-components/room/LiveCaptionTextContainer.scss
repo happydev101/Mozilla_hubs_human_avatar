@@ -1,0 +1,23 @@
+@use "../styles/theme.scss";
+
+:local(.caption_wrapper) {
+    display: flex;
+    position: absolute;
+    width: 40%;
+    height: 7rem;
+    background-color: #262424a1;
+    border-radius: 15px;
+    bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+  
+    @media (max-width: theme.$breakpoint-md) {
+      max-width: min(100% - 8px, 320px);
+      min-width: 320px;
+    }
+  }
+
+:local(.content) {
+    text-align: center;
+    color: white;
+}
